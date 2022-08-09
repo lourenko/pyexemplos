@@ -2,46 +2,41 @@
 
 ### A partir da posição do elemento na lista
 ```python
-myList.pop(2)
+uma_lista.pop(2)
 ```
 
-- `myList` - List to remove element from
-- `pop(` - Removes specified element by index (starts from zero) 
-- `(2)` - Remove element with index `2` (third element)
+- `uma_lista` - Lista da qual será retirado o elemento
+- `pop(` - Remove o elemento a partir do seu endereço (a partir de zero)
+- `(2)` - Remover o elemento indexado em `2` (ou terceiro elemento)
 
-group: delete_element
-
-## Example: 
+## Exemplo:
 ```python
-myList = ["Python", "Java", "Rust", "Javascript", "Ruby"]
-myList.pop(2)
-print(myList)
+uma_lista = [1, "Jaca", 3.14, "Vaca amarela", 7.8]
+uma_lista.pop(2)
+print(uma_lista)
 ```
 ```
-['Python', 'Java', 'Javascript', 'Ruby']
+[1, 'Jaca', 'Vaca amarela', 7.8]
 
 ```
 
-# Delete element from list by value
+# ou diretamente a partir do valor
 
 ```python
-myList.remove("Java")
+uma_lista.remove("Jaca")
 ```
 
-- `myList` - List to remove element from
-- `remove(` - Removes specified element by value
-- `"Java"` - Value of an element to remove from list
+- `remove(` - Remove um dado valor diretamente da lista
+- `"Java"` - Valor a ser removido
 
-group: delete_element
-
-## Example:
+## Exemplo:
 ```python
-myList = ["Python", "Java", "Rust", "Javascript", "Ruby"]
-myList.remove("Java")
-print(myList)
+uma_lista = [1, "Jaca", 3.14, "Vaca amarela", 7.8]
+uma_lista.remove("Jaca")
+print(uma_lista)
 ```
 ```
-['Python', 'Rust', 'Javascript', 'Ruby']
+[1, 3.14, 'Vaca amarela', 7.8]
 
 ```
 
