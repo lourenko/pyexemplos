@@ -1,4 +1,4 @@
-# Como sair de uma função
+# Como terminar (sair) de uma função
 
 ```python
 def uma_funcao(param):
