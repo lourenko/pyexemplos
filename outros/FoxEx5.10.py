@@ -24,7 +24,7 @@ def v_theta(r):
 
 def v_plani(r):
     "Perfil de velocidade planificado"
-    return w*r*(r - r1)/(r2 - r1)
+    return w*r2*(r - r1)/(r2 - r1)
 
 fig = plt.figure()
 ax = fig.add_subplot(projection="polar")
@@ -43,10 +43,12 @@ ax.set_rmax(r2)
 ax.set_rorigin(-r1)
 ax.set_thetamin(0)
 ax.set_thetamax(12)
+ax.set_xlabel(r"$r\,$[m]", labelpad=10)
+ax.set_ylabel(r"$v_{\theta}$[m/s]", labelpad=-450)
+ax.grid(False)
 ax.set_rticks(linspace(r.min(), r.max(), 3))
 ax.set_xticks(linspace(0, dois_perfis.max(), 6),
               ['0','2','5','7','9','11'])
 plt.legend()
-
 plt.show()
 
